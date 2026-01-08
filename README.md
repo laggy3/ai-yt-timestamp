@@ -1,4 +1,4 @@
-🎥 AI YouTube Timestamp Generator
+🎥 AI YouTube Timestamp Generator(DEVOLPING STAGE)
 
 An AI-powered web application that automatically generates timestamps (chapters) for YouTube videos by analyzing the video’s transcript. This helps creators improve video navigation, SEO, and viewer experience.
 

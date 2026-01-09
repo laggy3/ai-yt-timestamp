@@ -41,6 +41,61 @@ body {
   position: relative;
 }
 
+/* Shopping Cart Icon Button */
+.cart-icon-btn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f8b500, #ff6b9d);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(248, 181, 0, 0.4);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.cart-icon-btn:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 30px rgba(248, 181, 0, 0.6);
+  background: linear-gradient(135deg, #ffc733, #ff8fb3);
+}
+
+.cart-icon-btn:active {
+  transform: translateY(-1px) scale(1.05);
+}
+
+.cart-icon {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  stroke-width: 2;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: linear-gradient(135deg, #ff6b9d, #c44569);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -302,6 +357,24 @@ body {
     width: 150px;
     height: 150px;
   }
+
+  .cart-icon-btn {
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .cart-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cart-badge {
+    width: 20px;
+    height: 20px;
+    font-size: 0.65rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -325,6 +398,26 @@ body {
 
   .decoration-circle {
     display: none;
+  }
+
+  .cart-icon-btn {
+    top: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .cart-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .cart-badge {
+    width: 18px;
+    height: 18px;
+    font-size: 0.6rem;
+    top: -3px;
+    right: -3px;
   }
 }
 

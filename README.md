@@ -1,37 +1,37 @@
-🎥 AI YouTube Timestamp Generator(DEVOLPING STAGE)
+# AI YouTube Timestamp Generator
 
-An AI-powered web application that automatically generates timestamps (chapters) for YouTube videos by analyzing the video’s transcript. This helps creators improve video navigation, SEO, and viewer experience.
+## Overview
+A tool that automatically generates timestamped summaries for YouTube videos using AI.
 
-🚀 Features
+## Features
+- Automatic timestamp generation
+- AI-powered video summarization
+- Easy integration with YouTube links
 
-🔗 Paste any YouTube video link
+## Installation
+```bash
+npm install
+```
 
-🧠 AI analyzes the video transcript
+## Usage
+```bash
+node index.js <youtube-url>
+```
 
-⏱️ Automatically generates accurate timestamps
+## Requirements
+- Node.js
+- YouTube API key
+- OpenAI API key (or similar AI service)
 
-📋 Copy timestamps in YouTube chapter format
+## Configuration
+Add your API keys to a `.env` file:
+```
+YOUTUBE_API_KEY=your_key_here
+OPENAI_API_KEY=your_key_here
+```
 
-🌐 Simple and clean web interface
+## Output
+Generates a markdown file with video timestamps and AI-generated descriptions.
 
-🛠️ Tech Stack
-
-Frontend: React / HTML / CSS / JavaScript
-
-Backend: Firebase (Cloud Functions / API)
-
-AI: Transcript analysis using AI model
-
-Hosting: Firebase Hosting
-
-📌 How It Works
-
-User enters a YouTube video URL
-
-The app fetches the video transcript
-
-AI processes the transcript and detects topic changes
-
-Timestamps are generated in YouTube chapter format
-
-User copies and pastes them into the video description
+## License
+MIT
